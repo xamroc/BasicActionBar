@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onTabSelected(Tab tab, FragmentTransaction ft) {
 			mFragment = Fragment.instantiate(mActivity, mFragName);
-			ft.add(android.R.id.content, mFragment);
+			ft.replace(android.R.id.content, mFragment);
 			
 		}
 
